@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  lb_l12:
+    build: ./Docker/Nginx
+    ports:
+    - target: 80
+      published: 1212
+      mode:      host
+    - target:    443
+      published: 1213
+      mode:      host
+    volumes:
+    - ./Docker/Nginx/lb.conf:/etc/nginx/nginx.conf:ro
+    - ./Docker/Nginx/GeoLite2-Country.mmdb:/var/lib/GeoIP/GeoLite2-Country.mmdb
+    - ./logs/nginx:/var/log/nginx
+  app_US_1_l12:
+    image: nginx:1.23
+    volumes:
+    - ./Docker/Nginx/app.conf:/etc/nginx/nginx.conf:ro
+    - ./app/US:/usr/share/nginx/html
+  app_US_2_l12:
+    image: nginx:1.23
+    volumes:
+    - ./Docker/Nginx/app.conf:/etc/nginx/nginx.conf:ro
+    - ./app/US:/usr/share/nginx/html
+  app_UK_1_l12:
+    image: nginx:1.23
+    volumes:
+    - ./Docker/Nginx/app.conf:/etc/nginx/nginx.conf:ro
+    - ./app/UK:/usr/share/nginx/html
+  app_REST_1_l12:
+    image: nginx:1.23
+    volumes:
+    - ./Docker/Nginx/app.conf:/etc/nginx/nginx.conf:ro
+    - ./app/Rest:/usr/share/nginx/html

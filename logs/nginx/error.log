@@ -1,0 +1,22 @@
+2022/10/22 17:56:24 [emerg] 1#1: module "/var/lib/GeoIP/ngx_http_geoip2_module.so" version 1021006 instead of 1019002 in /etc/nginx/nginx.conf:3
+2022/10/22 18:54:45 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:14
+2022/10/22 18:55:34 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:30
+2022/10/22 19:39:07 [emerg] 1#1: invalid source variable name "62.4.44.190" in /etc/nginx/nginx.conf:19
+2022/10/22 19:40:27 [emerg] 1#1: invalid source variable name "62.4.44.190" in /etc/nginx/nginx.conf:19
+2022/10/22 19:40:40 [emerg] 1#1: invalid source variable name ""62.4.44.190"" in /etc/nginx/nginx.conf:19
+2022/10/22 19:41:39 [emerg] 1#1: unknown directive "$remote_addr" in /etc/nginx/nginx.conf:17
+2022/10/23 14:41:13 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:14
+2022/10/23 14:49:07 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:14
+2022/10/23 14:49:49 [emerg] 1#1: host not found in upstream "app_US_2_l12" in /etc/nginx/nginx.conf:15
+2022/10/23 14:50:20 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
+2022/10/23 14:51:36 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:30
+2022/10/23 14:51:45 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
+2022/10/23 14:51:56 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:30
+2022/10/23 14:52:15 [emerg] 1#1: host not found in upstream "app_US_1_l12" in /etc/nginx/nginx.conf:30
+2022/10/23 14:54:18 [error] 29#29: *2 invalid URL prefix in "http://", client: 192.168.240.1, server: _, request: "GET / HTTP/1.1", host: "localhost:1212"
+2022/10/23 14:54:26 [error] 29#29: *1 invalid URL prefix in "http://", client: 192.168.240.1, server: _, request: "GET / HTTP/1.1", host: "localhost:1212"
+2022/10/23 14:54:27 [error] 29#29: *3 invalid URL prefix in "http://", client: 192.168.240.1, server: _, request: "GET / HTTP/1.1", host: "localhost:1212"
+2022/10/23 14:57:48 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
+2022/10/23 14:58:22 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
+2022/10/23 14:59:54 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
+2022/10/23 15:02:49 [emerg] 1#1: host not found in upstream "app_UK_1_l12" in /etc/nginx/nginx.conf:26
